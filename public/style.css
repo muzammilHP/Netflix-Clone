@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.Section1 {
+    background-image: url("bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    /* background-size: max(1200px, 100vw); */
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
+.Section1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity here */
+    z-index: 1;
+    height: 100%;
+}
+
+nav {
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+nav img {
+    color: red;
+    width: 156px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    height: 40px;
+    width: 90px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+main {
+    height: 85vh;
+    width: 100vw;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    row-gap: 30px;
+    margin-top: 33px;
+    padding: 30px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+main h1 {
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+}
+
+main p {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+ input {
+    width: 35vw;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #BAB9B9;
+    background-color: #242221;
+
+}
+
+input::placeholder {
+    color: #BAB9B9;
+    padding-left: 10px;
+}
+
+.btn-email {
+    height: 60px;
+    width: 196px;
+    border: transparent;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.separation {
+    height: 10px;
+    width: 100%;
+    background-color: gray;
+}
+
+.section2 {
+    height: 450px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.section2 .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding-left: 170px;
+    padding-right: 20px;
+    align-items: start;
+    gap: 10px;
+    color: white;
+}
+.section2 .left h1{
+    font-size: 48px;
+}
+.section2 .left p{
+    font-size: 24px;
+}
+.section2 .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    padding-right: 260px;
+    position: relative;
+}
+.section2 .right img{
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+.section2 .right video{
+    position: absolute;
+    width: 315px;
+}
+.section3 {
+    height: 450px;
+    width: 100%;
+    background-color: black;
+    /* display: flex; */
+}
+
+.sec3 .left{
+    padding-left: 0;
+    padding-right: 300px;
+}
+.sec3 .right{
+    padding-right: 0;
+    padding-left: 75px;
+}
+
+.sec5 .left{
+    padding-left: 0;
+    padding-right: 300px;
+}
+.sec5 .right{
+    padding-right: 0;
+    padding-left: 75px;
+}
+
+.faq{
+    height: 900px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.faq h1{
+    font-size: 48px;
+    padding-bottom: 29px;
+}
+.faq .box{
+    height: 100px;
+    width: 70vw;
+    border: 1px transparent rgb(236, 229, 229);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px 0px 25px;
+    font-size: 24px;
+    background-color: #414141;
+    margin-bottom: 10px;
+}
+.faq .box span{
+    font-size: 24px;
+}
+.faq h3{
+    font-size: 20px;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+footer{
+    height:430px;
+    background-color: black;
+    /* padding: 60px 200px 60px 200px; */
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    align-content: center;
+}
+footer .last{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 20px;
+    padding-top: 40px;
+}
+footer a{
+    color: rgb(209, 201, 201);
+}
+footer span{
+    font-size: 16px;
+    color: white;
+    padding-top: 50px;
+}
+
+
+@media screen and (max-width: 1235px){
+    /* .section2{
+        flex-direction: column;
+    } */
+    .section2 .left{
+        padding-left: 10px;
+    }
+    .section2 .right{
+        padding-right: 0;
+    }
+    .Section1{
+        height: 100vh;
+    }
+    .sec3 .left{
+        padding-right: 0px;
+        /* width: 50%; */
+    }
+    .sec3 .right{
+        padding-left: 0px;
+    }
+    .sec3 .right img{
+        width: 300px;
+        width: 40vw
+    }
+    .sec3 .left h1{
+        font-size: 38px;
+    }
+    .sec3 .left p{
+        font-size: 20px;
+    }
+    .sec5 .left{
+        padding-right: 0px;
+    }
+    .sec5 .right{
+        padding-left: 0px;
+    }
+    footer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 766px){
+    .section2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+    .Section1{
+        height: 100vh;
+    }
+    .Section1 main h1{
+        font-size: 40px;
+    }
+    .Section1 main p{
+        font-size: 20px;
+    }
+    .sec5 .right img{
+        width: 300px;
+    }
+    .sec5 .left h1{
+        font-size: 40px;
+    }
+    .sec5 .left p{
+        font-size: 20px;
+    }
+    footer .last{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 486px){
+    /* .Section1{
+        height: 120vh;
+    } */
+    .Section1 main h1{
+        font-size: 40px;
+    }
+    .Section1 main p{
+        font-size: 20px;
+    }
+    .section2 .left h1{
+        font-size: 35px;
+    }
+    .section2 .left p{
+        font-size: 15px;
+    }
+    .sec5 .left h1{
+        font-size: 35px;
+    }
+    .sec5 .left p{
+        font-size: 15px;
+    }
+    .sec3 .left h1{
+        font-size: 35px;
+    }
+    .sec3 .left p{
+        font-size: 15px;
+    }
+    .faq h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    footer{
+        padding-left: 39px;
+    }
+    footer span{
+        text-align: center;
+    }
+    footer a{
+        font-size: 12px;
+    }
+}
